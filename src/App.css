@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: sans-serif;
+  /* JetBrains-like gradient */
+  background: linear-gradient(135deg, #333 0%, #6a0572 50%, #ab47bc 100%);
+  color: #fff; /* White text for better contrast */
+  min-height: 100vh; /* Ensure gradient covers the whole viewport height */
+  margin: 0; /* Remove default body margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff; /* White heading */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  padding: 30px; /* Increased padding */
+  margin-bottom: 20px;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+}
+
+.card label {
+  display: block;
+  margin-bottom: 15px; /* Increased margin */
+  font-weight: bold;
+  color: #fff; /* White label text */
+}
+
+.card select,
+.card input[type="checkbox"] {
+  margin-right: 8px; /* Increased margin */
+  padding: 10px; /* Added padding */
+  border-radius: 5px; /* Rounded corners for inputs */
+  border: none; /* Remove default border */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for inputs */
+}
+
+.card div {
+  margin-bottom: 10px; /* Increased margin */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically align items */
+}
+
+.card div label {
+  margin-bottom: 0; /* Remove bottom margin for labels in flex container */
+  order: 2; /* Change the order of the label to be after the checkbox */
+}
+
+.card div input[type="checkbox"] {
+  order: 1; /* Change the order of the checkbox to be before the label */
+  margin-right: 10px; /* Add space between checkbox and label */
+}
