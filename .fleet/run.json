@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "python",
+            "name": "Start Backend",
+            "module": "flask",
+            "arguments": [
+                "--app",
+                "backend:app",
+                "run",
+                "--port",
+                "5000"
+            ],
+            "environment": {
+                "PYTHONUNBUFFERED": "1",
+                "GOOGLE_APPLICATION_CREDENTIALS": "$PROJECT_DIR$/aihktn25-15-0fd915eaec3a.json"
+            },
+            "workingDir": "$PROJECT_DIR$"
+        }
+    ]
+}
