@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/my-vite-app/' // Replace 'my-vite-app' with your repository name
+  base: '/AdBrains/' // Updated to match your repository name
 })
